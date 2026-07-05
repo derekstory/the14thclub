@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 14th Club — Your phone is the club</title>
+<meta name="description" content="Grip your phone like a golf club and swing. The 14th Club reads your real motion and turns it into ball flight. Full rounds, real stats, no ads, no coins.">
+<style>
+  :root{
+    --ink:#0A1A10; --cream:#F2EFE6; --cream-dim:rgba(242,239,230,.62);
+    --green:#2D6E2D; --green-bright:#7CE08A; --gold:#F5C518;
+    --card:rgba(23,57,31,.92); --hairline:rgba(255,255,255,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--ink); color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.6;
+  }
+  a{color:var(--green-bright); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px}
+
+  /* ── Hero ── */
+  header{padding:88px 0 64px; text-align:center;
+    background:
+      radial-gradient(1200px 500px at 50% -160px, rgba(45,110,45,.35), transparent 70%),
+      var(--ink);}
+  .crest{width:88px;height:88px;margin:0 auto 28px;border-radius:50%;
+    border:1px solid var(--hairline); background:var(--card);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:900;font-size:34px;color:var(--gold);letter-spacing:-1px}
+  h1{font-size:clamp(34px,7vw,54px); font-weight:900; letter-spacing:-.5px; line-height:1.1}
+  .tagline{margin-top:14px; font-size:clamp(18px,3.4vw,22px); color:var(--green-bright); font-weight:600}
+  .promise{margin:22px auto 0; max-width:480px; color:var(--cream-dim); font-size:17px}
+  .cta{display:inline-block; margin-top:36px; background:var(--gold); color:#173118;
+    font-weight:800; font-size:17px; padding:15px 34px; border-radius:100px}
+  .cta:hover{text-decoration:none; filter:brightness(1.06)}
+  .cta-sub{margin-top:12px; font-size:14px; color:var(--cream-dim)}
+
+  /* ── Sections ── */
+  section{padding:56px 0; border-top:1px solid var(--hairline)}
+  h2{font-size:15px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
+     color:var(--cream-dim); margin-bottom:26px}
+  .card{background:var(--card); border:1px solid var(--hairline); border-radius:18px;
+    padding:26px 28px; margin-bottom:16px}
+  .card h3{font-size:19px; font-weight:800; margin-bottom:6px}
+  .card p{color:var(--cream-dim); font-size:16px}
+  .card .accent{color:var(--green-bright)}
+  .gold{color:var(--gold)}
+
+  /* ── Price ── */
+  .price-row{display:flex; gap:16px; flex-wrap:wrap}
+  .price-row .card{flex:1 1 240px; margin-bottom:0}
+  .big{font-size:34px; font-weight:900; margin:2px 0 6px}
+  ul.clean{list-style:none; margin-top:10px}
+  ul.clean li{color:var(--cream-dim); font-size:15.5px; padding:3px 0}
+  ul.clean li::before{content:"— "; color:var(--green-bright)}
+
+  footer{padding:48px 0 64px; border-top:1px solid var(--hairline);
+    text-align:center; color:var(--cream-dim); font-size:14px}
+  footer nav{margin-bottom:14px}
+  footer nav a{margin:0 12px; color:var(--cream)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="crest">14</div>
+    <h1>The 14th Club</h1>
+    <p class="tagline">Your phone is the club. Really.</p>
+    <p class="promise">Grip your phone like a golf club, address the ball, and swing.
+    The 14th Club reads your real motion — your tempo, your release, your face angle
+    at impact — and turns it into ball flight. No thumbsticks. No timing bars.
+    Your swing is the controller.</p>
+    <a class="cta" href="#courses">Coming to the App&nbsp;Store</a>
+    <p class="cta-sub">iPhone · free to try — play the front nine on us</p>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <h2>Learn your swing, don't fight it</h2>
+    <div class="card">
+      <h3>Two minutes of calibration, then it's <span class="accent">your</span> game</h3>
+      <p>A guided calibration learns how you swing and putt. From then on the game
+      responds to your natural motion — flush it and it flies, get quick and it
+      leaks right, just like the real thing.</p>
+    </div>
+    <div class="card">
+      <h3>Every shot in the bag</h3>
+      <p>Driver off the tee, towering approaches, chips, flops, splash-outs, and a
+      putting stroke with real pace and break. Wind, lies, and elevation change
+      every decision. Cinematic flyovers preview every hole.</p>
+    </div>
+    <div class="card">
+      <h3>Earn your <span class="gold">moments</span></h3>
+      <p>String pars together and light the Afterburner — a flaming bomb downrange.
+      Answer a bogey with a birdie for the Bounce Back. And once a round, the
+      Bullseye paints a three-ring target on the fairway: fly it in for strokes
+      off your card.</p>
+    </div>
+    <div class="card">
+      <h3>Your clubhouse, your crew</h3>
+      <p>Every stat a broadcast booth would read. Friends by club code, head-to-head
+      challenges, a clubhouse leaderboard, and the Weekly event. Interrupted
+      mid-round? Resume exactly where you left off.</p>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap">
+    <h2>One price. The whole game.</h2>
+    <div class="price-row">
+      <div class="card">
+        <h3>Free</h3>
+        <p class="big">$0</p>
+        <ul class="clean">
+          <li>Front nine at Hawk's Nest</li>
+          <li>Practice range &amp; putting green</li>
+          <li>Full guided calibration</li>
+          <li>Lifetime stats</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>The Full 18</h3>
+        <p class="big">One unlock</p>
+        <ul class="clean">
+          <li>Every course, every hole, forever</li>
+          <li>New courses ship as free updates</li>
+          <li>No ads · no coins · no timers</li>
+          <li>No subscription — ever</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:22px;color:var(--cream-dim);font-size:15.5px">
+      Your scorecard is earned, never bought. Plays fully offline; online features
+      are optional and anonymous.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="support/">Support</a>
+      <a href="privacy/">Privacy</a>
+      <a href="mailto:derek.a.story@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 Derek Story · The 14th Club</p>
+    <p style="margin-top:6px">Sixty seconds of calibration between you and your first pure strike.</p>
+  </div>
+</footer>
+
+</body>
+</html>
