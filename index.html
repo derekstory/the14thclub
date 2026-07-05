@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The 14th Club — Your phone is the club</title>
 <meta name="description" content="Grip your phone like a golf club and swing. The 14th Club reads your real motion and turns it into ball flight. Full rounds, real stats, no ads, no coins.">
+<link rel="icon" type="image/png" href="/logo.png">
 <style>
   :root{
     --ink:#0A1A10; --cream:#F2EFE6; --cream-dim:rgba(242,239,230,.62);
@@ -26,10 +27,9 @@
     background:
       radial-gradient(1200px 500px at 50% -160px, rgba(45,110,45,.35), transparent 70%),
       var(--ink);}
-  .crest{width:88px;height:88px;margin:0 auto 28px;border-radius:50%;
-    border:1px solid var(--hairline); background:var(--card);
-    display:flex;align-items:center;justify-content:center;
-    font-weight:900;font-size:34px;color:var(--gold);letter-spacing:-1px}
+  .crest{display:block; width:154px; height:154px; margin:0 auto 26px;
+    border-radius:50%; border:1px solid var(--hairline);
+    box-shadow:0 14px 46px rgba(0,0,0,.5)}
   h1{font-size:clamp(34px,7vw,54px); font-weight:900; letter-spacing:-.5px; line-height:1.1}
   .tagline{margin-top:14px; font-size:clamp(18px,3.4vw,22px); color:var(--green-bright); font-weight:600}
   .promise{margin:22px auto 0; max-width:480px; color:var(--cream-dim); font-size:17px}
@@ -67,7 +67,7 @@
 
 <header>
   <div class="wrap">
-    <div class="crest">14</div>
+    <img class="crest" src="/logo.png" alt="The 14th Club crest" width="154" height="154">
     <h1>The 14th Club</h1>
     <p class="tagline">Your phone is the club. Really.</p>
     <p class="promise">Grip your phone like a golf club, address the ball, and swing.
