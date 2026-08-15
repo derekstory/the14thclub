@@ -77,8 +77,9 @@
     letter-spacing:.06em; color:var(--cream); background:rgba(10,26,16,.72);
     border:1px solid rgba(255,255,255,.14); border-radius:100px; padding:5px 11px;
     pointer-events:none}
-  .clip .cap{margin-top:14px; font-size:15px; color:var(--cream-dim)}
-  .clip .cap strong{color:var(--cream); font-weight:700}
+  .clip .cap{margin-top:14px; font-size:15px; color:var(--cream-dim); line-height:1.4}
+  .clip .cap strong{display:block; color:var(--cream); font-weight:700; font-size:16px; margin-bottom:2px}
+  .clip .cap span{display:block}
   .clips-note{text-align:center; margin-top:22px; color:var(--cream-dim); font-size:14px}
 
   /* ── No-ads banner ── */
@@ -139,7 +140,7 @@
             autoplay muted loop playsinline preload="metadata"></video>
           <span class="snd">🔇 tap for sound</span>
         </div>
-        <p class="cap"><strong>Frost Mere</strong> · Hole 1 · Par 4</p>
+        <p class="cap"><strong>Frost Mere</strong><span>Hole 1 · Par 4</span></p>
       </div>
       <div class="clip">
         <div class="phone" onclick="toggleSound(this)">
@@ -147,7 +148,7 @@
             autoplay muted loop playsinline preload="metadata"></video>
           <span class="snd">🔇 tap for sound</span>
         </div>
-        <p class="cap"><strong>Copper Beech</strong> · Hole 1 · Par 4</p>
+        <p class="cap"><strong>Copper Beech</strong><span>Hole 1 · Par 4</span></p>
       </div>
     </div>
     <p class="clips-note">Real, unedited gameplay captured on iPhone — every hole
@@ -165,7 +166,7 @@
             autoplay muted loop playsinline preload="metadata"></video>
           <span class="snd">🔇 tap for sound</span>
         </div>
-        <p class="cap"><strong>Target Golf</strong> · Ten shots, three rings</p>
+        <p class="cap"><strong>Target Golf</strong><span>Ten shots, three rings</span></p>
       </div>
       <div class="clip">
         <div class="phone" onclick="toggleSound(this)">
@@ -173,7 +174,7 @@
             autoplay muted loop playsinline preload="metadata"></video>
           <span class="snd">🔇 tap for sound</span>
         </div>
-        <p class="cap"><strong>The Dartboard</strong> · Ten putts around the park</p>
+        <p class="cap"><strong>The Dartboard</strong><span>Ten putts around the park</span></p>
       </div>
       <div class="clip">
         <div class="phone" onclick="toggleSound(this)">
@@ -181,7 +182,7 @@
             autoplay muted loop playsinline preload="metadata"></video>
           <span class="snd">🔇 tap for sound</span>
         </div>
-        <p class="cap"><strong>Speed Golf</strong> · Nine holes vs. the clock</p>
+        <p class="cap"><strong>Speed Golf</strong><span>Nine holes vs. the clock</span></p>
       </div>
     </div>
     <p class="clips-note">No time for eighteen? Three arcade challenges that fit in
