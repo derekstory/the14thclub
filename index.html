@@ -66,7 +66,8 @@
 
   /* ── Video showcase ── */
   .clips{display:flex; gap:22px; justify-content:center; flex-wrap:wrap}
-  .clip{flex:0 1 250px; text-align:center}
+  .clip{flex:0 1 250px; min-width:170px; text-align:center}
+  #games .clip{flex:0 1 190px}
   .phone{position:relative; border-radius:30px; overflow:hidden;
     border:1px solid rgba(245,197,24,.28); background:#000;
     box-shadow:0 18px 44px rgba(0,0,0,.5), 0 0 0 6px rgba(23,57,31,.9);
@@ -151,6 +152,40 @@
     </div>
     <p class="clips-note">Real, unedited gameplay captured on iPhone — every hole
       opens with a flyover, then you swing.</p>
+  </div>
+</section>
+
+<section id="games">
+  <div class="wrap">
+    <h2>The Clubhouse Games</h2>
+    <div class="clips">
+      <div class="clip">
+        <div class="phone" onclick="toggleSound(this)">
+          <video src="/media/target-golf.mp4" poster="/media/target-golf-poster.jpg"
+            autoplay muted loop playsinline preload="metadata"></video>
+          <span class="snd">🔇 tap for sound</span>
+        </div>
+        <p class="cap"><strong>Target Golf</strong> · Ten shots, three rings</p>
+      </div>
+      <div class="clip">
+        <div class="phone" onclick="toggleSound(this)">
+          <video src="/media/the-dartboard.mp4" poster="/media/the-dartboard-poster.jpg"
+            autoplay muted loop playsinline preload="metadata"></video>
+          <span class="snd">🔇 tap for sound</span>
+        </div>
+        <p class="cap"><strong>The Dartboard</strong> · Ten putts around the park</p>
+      </div>
+      <div class="clip">
+        <div class="phone" onclick="toggleSound(this)">
+          <video src="/media/speed-golf.mp4" poster="/media/speed-golf-poster.jpg"
+            autoplay muted loop playsinline preload="metadata"></video>
+          <span class="snd">🔇 tap for sound</span>
+        </div>
+        <p class="cap"><strong>Speed Golf</strong> · Nine holes vs. the clock</p>
+      </div>
+    </div>
+    <p class="clips-note">No time for eighteen? Three arcade challenges that fit in
+      five minutes — all included.</p>
   </div>
 </section>
 <script>
