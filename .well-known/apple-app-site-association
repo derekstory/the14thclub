@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3VLR3S3J7S.com.watchthismove.the14thclub"],
+        "components": [
+          { "/": "/friend" },
+          { "/": "/friend/" }
+        ]
+      }
+    ]
+  }
+}
