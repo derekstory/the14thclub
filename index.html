@@ -93,9 +93,24 @@
   footer nav{margin-bottom:14px}
   footer nav a{margin:0 12px; color:var(--cream)}
 </style>
-<link rel="stylesheet" href="/brand.css?v=20260911">
+<link rel="stylesheet" href="/brand.css?v=20260911-crest">
 </head>
 <body class="landing">
+<!-- Match ClubhouseCrest.shader's green ink multipliers; preserve ivory, brass and alpha. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none">
+  <defs>
+    <filter id="clubhouse-crest" color-interpolation-filters="sRGB">
+      <!-- Both green-minus-red and green-minus-blue must select green ink. -->
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -20 20 0 0 -0.3" result="greenRed"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 20 -20 0 -0.3" result="greenBlue"/>
+      <feComposite in="greenRed" in2="greenBlue" operator="in" result="greenMask"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values=".45 0 0 0 0  0 .42 0 0 0  0 0 .50 0 0  0 0 0 1 0" result="darkInk"/>
+      <feComposite in="darkInk" in2="greenMask" operator="in" result="greenInk"/>
+      <feComposite in="SourceGraphic" in2="greenMask" operator="out" result="details"/>
+      <feComposite in="greenInk" in2="details" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+  </defs>
+</svg>
 
 <header>
   <div class="wrap">

@@ -25,7 +25,7 @@ summary{font-weight:500;min-height:44px;align-content:center}
 .landing .wrap{max-width:960px}
 .landing header{position:relative;isolation:isolate;padding:64px 0 64px;background:var(--ink)}
 .landing header::before{content:'';position:absolute;z-index:-1;inset:0 0 auto;height:620px;background:linear-gradient(180deg,rgba(5,46,35,.48),rgba(5,46,35,.5) 45%,rgba(5,46,35,.12) 64%,#052E23 100%),url('./media/clubhouse-mountains.jpg') center 54%/cover no-repeat}
-.landing .crest{width:156px;margin-bottom:16px;filter:drop-shadow(0 4px 18px rgba(5,46,35,.4))}
+.landing .crest{width:156px;margin-bottom:16px;filter:url(#clubhouse-crest) drop-shadow(0 4px 18px rgba(5,46,35,.4))}
 .landing h1{font-size:clamp(2.5rem,6.7vw,5rem);font-weight:700;text-shadow:0 3px 24px rgba(5,46,35,.7)}
 .landing .platform{display:flex;align-items:center;justify-content:center;gap:20px;font-size:.875rem;letter-spacing:.18em;color:var(--cream);margin:20px 0 0;text-shadow:0 2px 8px #052E23}
 .landing .platform::before,.landing .platform::after{content:'';height:1px;width:64px;background:#E0C387}
