@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The 14th Club — Real-swing golf for iPhone</title>
 <meta name="description" content="The 14th Club is an iPhone golf game: grip your phone like a club and swing — real motion becomes real ball flight. Full rounds, real stats, no ads, no coins. Free front nine on the App Store.">
-<link rel="icon" type="image/png" sizes="256x256" href="/icon.png">
-<link rel="apple-touch-icon" href="/icon.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/icon.png?v=20260911">
+<link rel="apple-touch-icon" href="/icon.png?v=20260911">
 <style>
   :root{
-    --ink:#0A1A10; --cream:#F2EFE6; --cream-dim:rgba(242,239,230,.62);
-    --green:#2D6E2D; --green-bright:#7CE08A; --gold:#F5C518;
-    --card:rgba(23,57,31,.92); --hairline:rgba(255,255,255,.10);
+    --ink:#052E23; --cream:#F4EFE2; --cream-dim:rgba(244,239,226,.8);
+    --green:#2D6E2D; --green-bright:#E0C387; --gold:#C19E5E;
+    --card:#304B3C; --hairline:rgba(193,158,94,.35);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{
@@ -69,7 +69,7 @@
   .clip{flex:0 1 250px; min-width:170px; text-align:center}
   #games .clip{flex:0 1 190px}
   .phone{position:relative; border-radius:30px; overflow:hidden;
-    border:1px solid rgba(245,197,24,.28); background:#000;
+    border:1px solid rgba(193,158,94,.28); background:#000;
     box-shadow:0 18px 44px rgba(0,0,0,.5), 0 0 0 6px rgba(23,57,31,.9);
     aspect-ratio:1320/2868; cursor:pointer}
   .phone video{display:block; width:100%; height:100%; object-fit:cover}
@@ -88,20 +88,21 @@
     font-size:clamp(23px,4.6vw,32px); font-weight:600; color:var(--gold);
     text-align:center; margin:0 0 30px; line-height:1.25}
   .noads .rule{flex:0 1 90px; min-width:20px; height:1px;
-    background:linear-gradient(90deg,transparent,rgba(245,197,24,.55))}
-  .noads .rule.r{background:linear-gradient(90deg,rgba(245,197,24,.55),transparent)}
+    background:linear-gradient(90deg,transparent,rgba(193,158,94,.55))}
+  .noads .rule.r{background:linear-gradient(90deg,rgba(193,158,94,.55),transparent)}
   footer nav{margin-bottom:14px}
   footer nav a{margin:0 12px; color:var(--cream)}
 </style>
+<link rel="stylesheet" href="/brand.css?v=20260911">
 </head>
-<body>
+<body class="landing">
 
 <header>
   <div class="wrap">
-    <img class="crest" src="/logo.png?v=2" alt="The 14th Club crest" width="200">
-    <p class="platform">An iPhone exclusive</p>
+    <img class="crest" src="/logo.png?v=3" alt="The 14th Club crest" width="200">
     <h1>The 14th Club</h1>
-    <p class="tagline">Your phone is the club. Really.</p>
+    <p class="platform">An iPhone exclusive</p>
+    <p class="tagline">Your phone is the club. <em>Really.</em></p>
     <p class="promise">Grip your phone like a golf club, address the ball, and swing.
     The 14th Club turns your real motion into ball flight — your swing controls
     the power, swing left and it starts left. No thumbsticks. No timing bars.
