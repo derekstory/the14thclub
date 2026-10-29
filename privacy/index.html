@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — The 14th Club</title>
-<meta name="description" content="The 14th Club privacy policy: your swing stays on your phone, we don't know who you are, and there are no ads.">
+<meta name="description" content="The 14th Club privacy policy: optional gameplay analytics, crash diagnostics, online features, and your data controls. No ads or cross-app tracking.">
 <link rel="icon" type="image/png" sizes="256x256" href="/icon.png?v=20260911">
 <link rel="apple-touch-icon" href="/icon.png?v=20260911">
 <style>
@@ -36,41 +36,104 @@
 <div class="wrap">
   <a class="home" href="../">← The 14th Club</a>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective July 2026</p>
+  <p class="date">Effective October 29, 2026</p>
 
-  <div class="tldr"><strong>The short version:</strong> your swing stays on your
-  phone, we don't know who you are, and there are no ads.</div>
+  <div class="tldr"><strong>The short version:</strong> gameplay analytics are optional, there are no ads,
+  and we do not track you across apps.</div>
 
-  <h2>Motion data</h2>
-  <p>The 14th Club reads your device's gyroscope and gravity sensors to turn your
-  physical swing into ball flight. This processing happens entirely on your device.
-  Motion data is never stored after the shot resolves and never leaves your phone.</p>
+  <p>The 14th Club is provided by Watch This Move LLC. This policy covers the
+  phone, Apple Watch, Apple TV and Google TV game experiences.</p>
 
-  <h2>Online play (optional)</h2>
-  <p>If you use online features (leaderboards, friends, challenges, events), the game
-  creates an anonymous player identity via Unity Gaming Services — no email, name, or
-  sign-up required. We store: your chosen display name, your friend code, your posted
-  scores, your friend and challenge connections, and — so a new phone doesn't erase
-  your game — an anonymous backup of your swing calibration and lifetime stats.
-  This data exists so those features work, and for no other purpose. It is never
-  sold, shared for advertising, or used for tracking.</p>
+  <h2>Motion data and paired devices</h2>
+  <p>The game uses device motion sensors to calculate swings. With Apple Watch,
+  swing measurements are sent to your paired phone. TV play exchanges controls and
+  game state with the connected TV over your local network. Online matches exchange
+  shot results and game state with the other player. Raw swing recordings are not
+  included in gameplay analytics. Calibration values derived from your swings are
+  saved locally and may be backed up with your online profile.</p>
 
-  <h2>Crash reports</h2>
-  <p>If the app crashes, an anonymous technical report (device model, OS version, app
-  version, and what the code was doing at the moment of the crash) is sent to Unity
-  Cloud Diagnostics so we can fix it. Crash reports contain no personal information,
-  no motion data, and are not linked to your identity.</p>
+  <h2>Online play and backup</h2>
+  <p>Online features use a persistent Unity Gaming Services player identifier.
+  We store your display name, friend code, scores, friend and challenge connections,
+  invitations, and calibration and lifetime-stat backups to operate these features.
+  Game Center supplies player identity, leaderboards and live match services on
+  Apple platforms; its identifier can be linked to your Unity player account.
+  Other players can see the names, scores and match information shared through
+  those features. Backup recovery depends on access to the same online identity;
+  an unlinked anonymous account may not be recoverable after reinstalling.</p>
+
+  <h2>Friend voice chat</h2>
+  <p>Friend matches support voice chat through Unity Vivox. Your microphone starts
+  muted and requires microphone permission and the in-game microphone control.
+  Voice is transmitted to your match partner when enabled. The app does not enable
+  voice recording, transcription or Vivox text chat. Vivox processes voice
+  transiently and retains service identifiers (player and device IDs) and a
+  truncated IP address for up to 30 days by default. Muting the microphone stops
+  voice transmission but does not itself disconnect the voice service.</p>
+
+  <h2>Gameplay analytics (optional)</h2>
+  <p>Gameplay analytics start only after you choose Allow in Settings. We use Unity
+  Analytics to understand which courses are played, scores, completed holes, game
+  modes, playing time, and technical error categories. Reports include the app
+  version, build, platform, phone or TV play, and random installation, session and
+  round identifiers. These identifiers let us count rounds and combine reports;
+  they are separate from your online player account. We do not include your display
+  name, friend code, contacts, advertising identifier, or swing recordings.</p>
+  <p>Unity receives your IP address when your device connects and may derive your
+  country. This is pseudonymous data, not a guarantee of anonymity. Unity processes
+  data in countries including the United States and European Union. Raw analytics
+  events are normally retained for 13 months; aggregated statistics and user
+  profiles may be retained longer. See
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a> for
+  information about its processing.</p>
+  <p>Turning gameplay analytics off stops new collection and clears unsent reports.
+  Offline reports are kept on your device for up to seven days, subject to a fixed
+  queue limit, and sent when connectivity returns. Gameplay analytics do not collect
+  data from players who leave the setting off.</p>
+
+  <h2>Crash reports and diagnostics</h2>
+  <p>Apple provides TestFlight crash reports automatically and App Store diagnostics
+  according to your Apple sharing settings. The game also has Unity Diagnostics
+  enabled. Technical reports include an installation-specific identifier and may
+  include device and operating-system details, app version and code stack traces.
+  We use them to investigate faults.
+  Apple sharing controls are separate from the gameplay analytics setting.
+  Unity Diagnostics is enabled in the build and has no in-game opt-out; its default
+  retention period is 90 days. We may combine aggregate Apple crash and
+  usage counts with our gameplay dashboard; we do not import tester names or email
+  addresses into that dashboard.</p>
 
   <h2>What we don't do</h2>
-  <p>No advertising. No third-party analytics. No tracking across apps. No purchase
+  <p>No advertising. No tracking across apps. No purchase
   of data about you. Purchases are processed entirely by Apple — no payment
-  information ever reaches us. Children's data: we collect the same minimal anonymous
-  data from all players and the game is rated 4+.</p>
+  information ever reaches us. Optional gameplay analytics are not required to play.</p>
 
   <h2>Deleting your data</h2>
-  <p>Settings → Delete Account permanently removes your online identity and
-  everything tied to it — including the calibration and stats backups — immediately.
-  Offline stats live only on your device and are yours to reset in Settings.</p>
+  <p>Settings → Delete Account requests removal of your Unity online account and
+  cleanup of associated social data and cloud backups. It requires a working
+  connection. Some service cleanup can fail independently, so this is not a promise
+  that all records disappear immediately. Contact us if you need confirmation or
+  help removing remaining records. This control does not delete your Apple account,
+  Game Center records, Vivox service records, or crash reports. Local stats can be
+  reset separately in Settings.</p>
+  <p>Gameplay analytics use a separate identifier. Settings → Delete analytics data
+  turns collection off, removes unsent reports, and queues a request for Unity to
+  delete data associated with this installation. The app must connect to the internet
+  to send that request. A pending request stays on the device until accepted; please
+  allow it to send before uninstalling. Acceptance confirms delivery of the request,
+  not immediate completion of deletion. This does not erase your saved rounds or
+  scores, or Apple and Unity crash reports. Contact us for help with a privacy request.</p>
+
+  <h2>Privacy requests and retention</h2>
+  <p>Online profile and game records remain until removed through the relevant
+  service or a deletion request. Contact us to request access, correction or deletion,
+  including help with Unity Diagnostics or Vivox records. We may need information
+  to identify the relevant account or installation and verify your request. Apple
+  manages its own account and Game Center data under
+  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+  <p>If you email support, we receive your email address and the information you
+  choose to send, and use it to respond to your request. Service providers process
+  data for the functions described above; we do not sell it or share it for advertising.</p>
 
   <h2>Contact</h2>
   <p>Questions: <a href="mailto:info@watchthismove.com">info@watchthismove.com</a></p>
