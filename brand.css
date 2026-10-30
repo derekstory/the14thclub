@@ -37,6 +37,7 @@ summary{font-weight:500;min-height:44px;align-content:center}
 .landing h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:32px}
 .landing .card{padding:28px 32px}
 .landing #how .card{background:transparent;border-width:0 0 1px;border-radius:0;padding:24px 0}
+.landing #how .card:last-child{border-bottom:0}
 .landing .noads{font-weight:500;color:var(--cream)}
 .landing .noads .rule,.landing .noads .rule.r{background:var(--gold)}
 .landing .big{font-family:Archivo,system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums}
