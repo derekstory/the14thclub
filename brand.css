@@ -4,7 +4,7 @@
 @font-face{font-family:Bodoni;src:url('./fonts/BodoniModa-MediumItalic.ttf') format('truetype');font-weight:500;font-style:italic;font-display:swap}
 @font-face{font-family:Archivo;src:url('./fonts/Archivo-Medium.ttf') format('truetype');font-weight:400 500;font-display:swap}
 @font-face{font-family:Archivo;src:url('./fonts/Archivo-SemiBold.ttf') format('truetype');font-weight:600 900;font-display:swap}
-:root{color-scheme:dark;--ink:#052E23;--cream:#F4EFE2;--cream-dim:rgba(244,239,226,.8);--gold:#C19E5E;--moss:#304B3C;--card:#304B3C;--hairline:rgba(193,158,94,.35)}
+:root{color-scheme:dark;--ink:#142C38;--cream:#F4EFE2;--cream-dim:rgba(244,239,226,.8);--gold:#C19E5E;--moss:#243F50;--card:#243F50;--hairline:rgba(193,158,94,.35)}
 body{background:var(--ink);color:var(--cream);font-family:Archivo,system-ui,sans-serif;overflow-wrap:break-word}
 h1,h2,h3,.brand,.noads{font-family:Bodoni,Georgia,serif;font-weight:500;letter-spacing:0;text-transform:none;color:var(--cream)}
 h1{font-size:clamp(2.25rem,6vw,3.5rem);line-height:1.15}
@@ -24,10 +24,10 @@ summary{font-weight:500;min-height:44px;align-content:center}
 .brand img{border-radius:10px}
 .landing .wrap{max-width:960px}
 .landing header{position:relative;isolation:isolate;padding:64px 0 64px;background:var(--ink)}
-.landing header::before{content:'';position:absolute;z-index:-1;inset:0 0 auto;height:620px;background:linear-gradient(180deg,rgba(5,46,35,.48),rgba(5,46,35,.5) 45%,rgba(5,46,35,.12) 64%,#052E23 100%),url('./media/clubhouse-mountains.jpg') center 54%/cover no-repeat}
-.landing .crest{width:156px;margin-bottom:16px;filter:url(#clubhouse-crest) drop-shadow(0 4px 18px rgba(5,46,35,.4))}
-.landing h1{font-size:clamp(2.5rem,6.7vw,5rem);font-weight:700;text-shadow:0 3px 24px rgba(5,46,35,.7)}
-.landing .platform{display:flex;align-items:center;justify-content:center;gap:20px;font-size:.875rem;letter-spacing:.18em;color:var(--cream);margin:20px 0 0;text-shadow:0 2px 8px #052E23}
+.landing header::before{content:'';position:absolute;z-index:-1;inset:0 0 auto;height:620px;background:linear-gradient(180deg,rgba(20,44,56,.48),rgba(20,44,56,.5) 45%,rgba(20,44,56,.12) 64%,#142C38 100%),url('./media/clubhouse-mountains.jpg') center 54%/cover no-repeat}
+.landing .crest{width:156px;margin-bottom:16px;filter:url(#clubhouse-crest) drop-shadow(0 4px 18px rgba(20,44,56,.4))}
+.landing h1{font-size:clamp(2.5rem,6.7vw,5rem);font-weight:700;text-shadow:0 3px 24px rgba(20,44,56,.7)}
+.landing .platform{display:flex;align-items:center;justify-content:center;gap:20px;font-size:.875rem;letter-spacing:.18em;color:var(--cream);margin:20px 0 0;text-shadow:0 2px 8px #142C38}
 .landing .platform::before,.landing .platform::after{content:'';height:1px;width:64px;background:#E0C387}
 .landing .tagline{margin:180px auto 0;font:500 clamp(2.1rem,5vw,3.5rem)/1.15 Bodoni,Georgia,serif;max-width:780px;color:var(--cream)}
 .landing .tagline em{font-weight:500}
@@ -41,7 +41,7 @@ summary{font-weight:500;min-height:44px;align-content:center}
 .landing .noads .rule,.landing .noads .rule.r{background:var(--gold)}
 .landing .big{font-family:Archivo,system-ui,sans-serif;font-weight:600;font-variant-numeric:tabular-nums}
 .landing .phone{border-color:var(--gold);box-shadow:0 12px 30px rgba(0,0,0,.2)}
-.landing .phone .snd{font-size:.875rem;background:rgba(5,46,35,.9)}
+.landing .phone .snd{font-size:.875rem;background:rgba(20,44,56,.9)}
 .landing footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 0}
 .landing footer nav a{display:inline-flex;align-items:center;min-height:44px}
 @media(max-width:600px){
@@ -56,3 +56,24 @@ summary{font-weight:500;min-height:44px;align-content:center}
   .landing .clips{gap:28px}
   .landing .clip,.landing #games .clip{flex:0 1 250px}
 }
+
+/* Current app identity: white wordmark, navy surfaces, Archivo and ivory actions. */
+@font-face{font-family:Archivo;src:url('./fonts/Archivo-Bold.ttf') format('truetype');font-weight:700 900;font-display:swap}
+body{font-weight:600}
+h1,h2,h3,.brand,.noads,.card h3{font-family:Archivo,system-ui,sans-serif;font-weight:700;letter-spacing:normal}
+.cta,.error-page a.home,a.action,button{font:700 1rem/1.4 Archivo,system-ui,sans-serif;border-radius:999px;background:var(--cream);color:var(--ink);border-color:#526777}
+.brand-link{display:inline-block;margin-bottom:20px}
+.brand-link img,.brand img{width:220px;max-width:100%;height:auto;border-radius:0}
+.wordmark{display:block;width:min(100%,480px);height:auto;margin:0 auto}
+.error-page .wordmark{width:240px;margin-bottom:36px}
+.error-page{background:var(--ink)}
+.landing header{padding-top:72px}
+.landing header::before{height:700px;background:linear-gradient(180deg,rgba(20,44,56,.35),rgba(20,44,56,.25) 40%,#142C38 100%),url('./media/clubhouse-mountains.jpg') center/cover no-repeat}
+.landing .tagline{margin-top:110px;font:700 clamp(2rem,5vw,3.5rem)/1.15 Archivo,system-ui,sans-serif}
+.landing .tagline em{font-style:normal;font-weight:700}
+.landing .platform{letter-spacing:.12em}
+.landing .promise{color:#D3DCE0;line-height:1.75}
+.landing .cta{background:var(--cream);color:var(--ink)}
+.landing .noads{font-family:Archivo,system-ui,sans-serif;font-weight:700}
+.landing .card{background:#243F50;border-color:#526777}
+@media(max-width:600px){.landing header{padding-top:48px}.landing .wordmark{width:310px}.landing .tagline{margin-top:100px}.landing header::before{height:620px}}

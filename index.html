@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The 14th Club — Real-swing golf for iPhone</title>
 <meta name="description" content="The 14th Club is an iPhone golf game: grip your phone like a club and swing — real motion becomes real ball flight. Full rounds, real stats, no ads, no coins. Free front nine on the App Store.">
-<link rel="icon" type="image/png" sizes="256x256" href="/icon.png?v=20260911">
-<link rel="apple-touch-icon" href="/icon.png?v=20260911">
+<link rel="icon" type="image/png" sizes="256x256" href="/icon.png?v=20261030">
+<link rel="apple-touch-icon" href="/icon.png?v=20261030">
 <style>
   :root{
-    --ink:#052E23; --cream:#F4EFE2; --cream-dim:rgba(244,239,226,.8);
+    --ink:#142C38; --cream:#F4EFE2; --cream-dim:rgba(244,239,226,.8);
     --green:#2D6E2D; --green-bright:#E0C387; --gold:#C19E5E;
-    --card:#304B3C; --hairline:rgba(193,158,94,.35);
+    --card:#243F50; --hairline:rgba(193,158,94,.35);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{
@@ -93,29 +93,12 @@
   footer nav{margin-bottom:14px}
   footer nav a{margin:0 12px; color:var(--cream)}
 </style>
-<link rel="stylesheet" href="/brand.css?v=20260911-crest">
+<link rel="stylesheet" href="/brand.css?v=20261030">
 </head>
 <body class="landing">
-<!-- Match ClubhouseCrest.shader's green ink multipliers; preserve ivory, brass and alpha. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none">
-  <defs>
-    <filter id="clubhouse-crest" color-interpolation-filters="sRGB">
-      <!-- Both green-minus-red and green-minus-blue must select green ink. -->
-      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -20 20 0 0 -0.3" result="greenRed"/>
-      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 20 -20 0 -0.3" result="greenBlue"/>
-      <feComposite in="greenRed" in2="greenBlue" operator="in" result="greenMask"/>
-      <feColorMatrix in="SourceGraphic" type="matrix" values=".45 0 0 0 0  0 .42 0 0 0  0 0 .50 0 0  0 0 0 1 0" result="darkInk"/>
-      <feComposite in="darkInk" in2="greenMask" operator="in" result="greenInk"/>
-      <feComposite in="SourceGraphic" in2="greenMask" operator="out" result="details"/>
-      <feComposite in="greenInk" in2="details" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
-    </filter>
-  </defs>
-</svg>
-
 <header>
   <div class="wrap">
-    <img class="crest" src="/logo.png?v=3" alt="The 14th Club crest" width="200">
-    <h1>The 14th Club</h1>
+    <h1><img class="wordmark" src="/wordmark.png" alt="The 14th Club" width="480"></h1>
     <p class="platform">An iPhone exclusive</p>
     <p class="tagline">Your phone is the club. <em>Really.</em></p>
     <p class="promise">Grip your phone like a golf club, address the ball, and swing.
@@ -139,81 +122,19 @@
       No ads. No subscriptions. No coins.</p>
       <p style="margin-top:12px">Not ready to buy? Play the
       <span class="gold">unlimited nine-hole demo</span> — the front nine at
-      Herons Marsh. Free, no timer, no strings, yours to keep.</p>
+      Laurel Ridge. Free, no timer, no strings, yours to keep.</p>
     </div>
-  </div>
-</section>
-
-<section id="watch">
-  <div class="wrap">
-    <h2>See it played</h2>
-    <div class="clips">
-      <div class="clip">
-        <div class="phone" onclick="toggleSound(this)">
-          <video src="/media/frost-mere-hole-1.mp4" poster="/media/frost-mere-hole-1-poster.jpg"
-            autoplay muted loop playsinline preload="metadata"></video>
-          <span class="snd">🔇 tap for sound</span>
-        </div>
-        <p class="cap"><strong>Frost Mere</strong><span>Hole 1 · Par 4</span></p>
-      </div>
-      <div class="clip">
-        <div class="phone" onclick="toggleSound(this)">
-          <video src="/media/copper-beech-hole-1.mp4" poster="/media/copper-beech-hole-1-poster.jpg"
-            autoplay muted loop playsinline preload="metadata"></video>
-          <span class="snd">🔇 tap for sound</span>
-        </div>
-        <p class="cap"><strong>Copper Beech</strong><span>Hole 1 · Par 4</span></p>
-      </div>
-    </div>
-    <p class="clips-note">Real, unedited gameplay captured on iPhone — every hole
-      opens with a flyover, then you swing.</p>
   </div>
 </section>
 
 <section id="games">
   <div class="wrap">
-    <h2>Clubhouse Challenges</h2>
-    <div class="clips">
-      <div class="clip">
-        <div class="phone" onclick="toggleSound(this)">
-          <video src="/media/target-golf.mp4" poster="/media/target-golf-poster.jpg"
-            autoplay muted loop playsinline preload="metadata"></video>
-          <span class="snd">🔇 tap for sound</span>
-        </div>
-        <p class="cap"><strong>Target Golf</strong><span>How high can you score?</span></p>
-      </div>
-      <div class="clip">
-        <div class="phone" onclick="toggleSound(this)">
-          <video src="/media/the-dartboard.mp4" poster="/media/the-dartboard-poster.jpg"
-            autoplay muted loop playsinline preload="metadata"></video>
-          <span class="snd">🔇 tap for sound</span>
-        </div>
-        <p class="cap"><strong>The Dartboard</strong><span>How sharp is your putting?</span></p>
-      </div>
-      <div class="clip">
-        <div class="phone" onclick="toggleSound(this)">
-          <video src="/media/speed-golf.mp4" poster="/media/speed-golf-poster.jpg"
-            autoplay muted loop playsinline preload="metadata"></video>
-          <span class="snd">🔇 tap for sound</span>
-        </div>
-        <p class="cap"><strong>Speed Golf</strong><span>How fast can you play nine?</span></p>
-      </div>
-    </div>
-    <p class="clips-note">No time for eighteen? Three arcade challenges that fit in
-      five minutes — all included.</p>
+    <h2>Make every swing count.</h2>
+    <div class="card"><h3>Target Golf</h3><p>Pick your target. Find your swing. See how high you can score.</p></div>
+    <div class="card"><h3>The Dartboard</h3><p>A fresh challenge for your putting touch.</p></div>
+    <div class="card"><h3>Speed Golf</h3><p>Play nine against the clock.</p></div>
   </div>
 </section>
-<script>
-  function toggleSound(box){
-    var v = box.querySelector('video'), tag = box.querySelector('.snd');
-    document.querySelectorAll('.phone video').forEach(function(o){
-      if (o !== v){ o.muted = true; o.parentNode.querySelector('.snd').textContent = '🔇 tap for sound'; }
-    });
-    v.muted = !v.muted;
-    tag.textContent = v.muted ? '🔇 tap for sound' : '🔊 tap to mute';
-    if (v.paused) v.play();
-  }
-</script>
 
 <section id="how">
   <div class="wrap">
@@ -235,7 +156,8 @@
       <h3>Your clubhouse, your crew</h3>
       <p>Every stat a broadcast booth would read. Friends by club code, head-to-head
       challenges, and a clubhouse leaderboard. Interrupted mid-round? Resume
-      exactly where you left off.</p>
+      exactly where you left off. No login required to play. A Game Center account
+      is required for online friend play.</p>
     </div>
   </div>
 </section>
@@ -248,7 +170,7 @@
         <h3>Free</h3>
         <p class="big">$0</p>
         <ul class="clean">
-          <li>Front nine at Herons Marsh</li>
+          <li>Front nine at Laurel Ridge</li>
           <li>Full guided calibration</li>
           <li>Lifetime stats</li>
         </ul>
@@ -266,7 +188,7 @@
     </div>
     <p style="margin-top:22px;color:var(--cream-dim);font-size:15.5px">
       Your scorecard is earned, never bought. Plays fully offline; online features
-      are optional and anonymous.</p>
+      are optional.</p>
   </div>
 </section>
 
