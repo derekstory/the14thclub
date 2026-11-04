@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — The 14th Club</title>
-<meta name="description" content="The 14th Club privacy policy: optional gameplay analytics, crash diagnostics, online features, and your data controls. No ads or cross-app tracking.">
+<meta name="description" content="The 14th Club privacy policy: online features, crash diagnostics, and your data controls. No optional gameplay analytics. No ads or cross-app tracking.">
 <link rel="icon" type="image/png" sizes="256x256" href="/icon.png?v=20261030">
 <link rel="apple-touch-icon" href="/icon.png?v=20261030">
 <style>
@@ -31,104 +31,185 @@
   p strong{color:var(--cream)}
 </style>
 <link rel="stylesheet" href="../brand.css?v=20261030-2">
+<style>
+  body{font-weight:400}
+  a{text-decoration:underline;text-underline-offset:3px}
+  .home{text-decoration:none}
+  h1{font-size:clamp(2rem,7vw,2.75rem)}
+  h2{font-size:1.4rem;line-height:1.3;scroll-margin-top:24px}
+  h3{font-size:1.05rem;line-height:1.4;margin:24px 0 8px}
+  ul{padding-left:1.25rem;margin:12px 0 18px}
+  li{color:var(--cream-dim);margin:8px 0}
+  li strong{color:var(--cream)}
+  .tldr p:last-child,.tldr ul:last-child{margin-bottom:0}
+  .contents{border-block:1px solid var(--hairline);padding:16px 0;margin:28px 0}
+  .contents ul{display:flex;flex-wrap:wrap;gap:8px 20px;list-style:none;padding:0;margin:8px 0 0}
+  .contents li{margin:0}
+  .contents a{display:inline-block;padding:6px 0}
+  .date{font-size:.9rem}
+  @media(max-width:480px){.wrap{padding:32px 20px 56px}.tldr{padding:18px}}
+</style>
 </head>
 <body>
-<div class="wrap">
-  <a class="home brand-link" href="../"><img src="/wordmark.png" alt="The 14th Club" width="180"></a>
+<main class="wrap">
+  <a class="home brand-link" href="../"><img src="/wordmark.png" alt="The 14th Club home" width="180"></a>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective October 29, 2026</p>
+  <p class="date">Effective October 29, 2026 · Last updated November 4, 2026</p>
 
-  <div class="tldr"><strong>The short version:</strong> gameplay analytics are optional, there are no ads,
-  and we do not track you across apps.</div>
+  <div class="tldr">
+    <strong>The short version</strong>
+    <ul>
+      <li>No advertising, cross-app tracking, or voice chat.</li>
+      <li>This version does not collect optional gameplay analytics.</li>
+      <li>Online features use player information to connect friends, run matches, and back up progress.</li>
+      <li>Crash diagnostics remain enabled to help investigate faults.</li>
+      <li>You can delete your online account in Settings and contact us about other data.</li>
+    </ul>
+  </div>
 
-  <p>The 14th Club is provided by Watch This Move LLC. This policy covers the
-  iPhone game experience.</p>
+  <p>The 14th Club is provided by Watch This Move LLC (“we”). This policy explains
+  how information is handled in the iPhone game and when you contact us for support.</p>
 
-  <h2>Motion data and online play</h2>
-  <p>The game uses iPhone motion sensors to calculate swings. Online matches exchange
-  shot results and game state with the other player. Raw swing recordings are not
-  included in gameplay analytics. Calibration values derived from your swings are
-  saved locally and may be backed up with your online profile.</p>
+  <nav class="contents" aria-label="Privacy policy sections">
+    <strong>On this page</strong>
+    <ul>
+      <li><a href="#gameplay">Gameplay and friends</a></li>
+      <li><a href="#analytics">Gameplay analytics removed</a></li>
+      <li><a href="#diagnostics">Crash diagnostics</a></li>
+      <li><a href="#purchases">Purchases</a></li>
+      <li><a href="#controls">Your controls</a></li>
+      <li><a href="#retention">Retention and providers</a></li>
+      <li><a href="#families">Children and families</a></li>
+      <li><a href="#requests">Privacy requests</a></li>
+    </ul>
+  </nav>
 
-  <h2>Online play and backup</h2>
-  <p>Online features use a persistent Unity Gaming Services player identifier.
-  We store your display name, friend code, scores, friend and challenge connections,
-  invitations, and calibration and lifetime-stat backups to operate these features.
-  Game Center supplies player identity, leaderboards and live match services on
-  Apple platforms; its identifier can be linked to your Unity player account.
-  Other players can see the names, scores and match information shared through
-  those features. Backup recovery depends on access to the same online identity;
-  an unlinked anonymous account may not be recoverable after reinstalling.</p>
+  <h2 id="gameplay">Gameplay, online play, and friends</h2>
+  <h3>Motion and saved progress</h3>
+  <p>The game uses your iPhone’s motion sensors to calculate swings. We do not upload raw swing recordings for gameplay analytics. Calibration settings derived
+  from your swings are saved on your device and may be backed up with your online
+  profile, along with lifetime stats. Online matches exchange shot results and
+  game state with the other player.</p>
 
-  <h2>Gameplay analytics (optional)</h2>
-  <p>Gameplay analytics start only after you choose Allow in Settings. We use Unity
-  Analytics to understand which courses are played, scores, completed holes, game
-  modes, playing time, and technical error categories. Reports include the app
-  version, build, platform, and random installation, session and
-  round identifiers. These identifiers let us count rounds and combine reports;
-  they are separate from your online player account. We do not include your display
-  name, friend code, contacts, advertising identifier, or swing recordings.</p>
-  <p>Unity receives your IP address when your device connects and may derive your
-  country. This is pseudonymous data, not a guarantee of anonymity. Unity processes
-  data in countries including the United States and European Union. Raw analytics
-  events are normally retained for 13 months; aggregated statistics and user
-  profiles may be retained longer. See
-  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a> for
-  information about its processing.</p>
-  <p>Turning gameplay analytics off stops new collection and clears unsent reports.
-  Offline reports are kept on your device for up to seven days, subject to a fixed
-  queue limit, and sent when connectivity returns. Gameplay analytics do not collect
-  data from players who leave the setting off.</p>
+  <h3>Your online profile</h3>
+  <p>Online features use a Unity Gaming Services player ID that identifies your
+  account across sessions. To operate these features, we store your display name,
+  friend code, scores, friend connections, online presence, invitations, challenge
+  and event records, and calibration and lifetime-stat backups.</p>
+  <p>Apple Game Center provides player identity, leaderboards, and live match
+  services. Its player ID can be linked to your Unity player account. Backup
+  recovery depends on access to the same online identity; an unlinked anonymous
+  account may not be recoverable after reinstalling.</p>
 
-  <h2>Crash reports and diagnostics</h2>
-  <p>Apple provides TestFlight crash reports automatically and App Store diagnostics
-  according to your Apple sharing settings. The game also has Unity Diagnostics
-  enabled. Technical reports include an installation-specific identifier and may
-  include device and operating-system details, app version and code stack traces.
-  We use them to investigate faults.
-  Apple sharing controls are separate from the gameplay analytics setting.
-  Unity Diagnostics is enabled in the build and has no in-game opt-out; its default
-  retention period is 90 days. We may combine aggregate Apple crash and
-  usage counts with our gameplay dashboard; we do not import tester names or email
-  addresses into that dashboard.</p>
+  <h3>Friends and information other players see</h3>
+  <p>If you grant access to your Game Center friends, the app sends their Game Center
+  player IDs to our Unity backend to find friends who also play The 14th Club and
+  synchronize in-game friendships. This does not give us access to your phone’s
+  address book.</p>
+  <p>Other players can see the display names, scores, presence, and match or event
+  information shared through the relevant online features. When you share a friend
+  invitation link, the link includes your display name and friend code, which people
+  receiving the link can see. Choose a display name that does not reveal information
+  you want to keep private.</p>
+  <p>Friend matches offer preset quick-chat phrases, such as “Nice shot.” The game
+  does not offer voice chat or free-form text chat and does not use your microphone.</p>
 
-  <h2>What we don't do</h2>
-  <p>No advertising. No tracking across apps. No purchase
-  of data about you. Purchases are processed entirely by Apple — no payment
-  information ever reaches us. Optional gameplay analytics are not required to play.</p>
+  <h2 id="analytics">Gameplay analytics removed</h2>
+  <p>This version no longer collects optional reports about courses played, scores,
+  completed holes, game modes, playing time, or gameplay error categories. There is
+  no gameplay analytics setting to enable. Scores and other data needed for online
+  features and cloud backups are still handled as described above.</p>
+  <p>If you previously allowed gameplay analytics in an older version, updating and
+  opening the app discards unsent reports. If an old analytics installation ID is
+  present, the app uses it only to request deletion from Unity. A failed request is
+  kept on the device for retry; keep the app installed and open it with an internet
+  connection so it can send. Successful delivery does not mean deletion has already
+  finished. Fresh installations do not create an analytics ID or send these requests.</p>
+  <p>Older versions may continue sending reports if you previously enabled analytics.
+  Turn that setting off or update the app. Contact us for help with previously
+  collected data. Removing gameplay analytics does not remove crash diagnostics.</p>
 
-  <h2>Deleting your data</h2>
-  <p>Settings → Delete Account requests removal of your Unity online account and
-  cleanup of associated social data and cloud backups. It requires a working
-  connection. Some service cleanup can fail independently, so this is not a promise
-  that all records disappear immediately. Contact us if you need confirmation or
-  help removing remaining records. This control does not delete your Apple account,
-  Game Center records or crash reports. Local stats can be
-  reset separately in Settings.</p>
-  <p>Gameplay analytics use a separate identifier. Settings → Delete analytics data
-  turns collection off, removes unsent reports, and queues a request for Unity to
-  delete data associated with this installation. The app must connect to the internet
-  to send that request. A pending request stays on the device until accepted; please
-  allow it to send before uninstalling. Acceptance confirms delivery of the request,
-  not immediate completion of deletion. This does not erase your saved rounds or
-  scores, or Apple and Unity crash reports. Contact us for help with a privacy request.</p>
+  <h2 id="diagnostics">Crash reports and diagnostics</h2>
+  <p>We use technical reports to investigate faults. Apple provides TestFlight crash
+  reports automatically and App Store diagnostics according to your Apple sharing
+  settings. Unity Diagnostics is also enabled in the game.</p>
+  <p>Unity technical reports include an installation-specific ID and may include
+  device and operating-system details, app version, and details of where an error
+  occurred in the code.</p>
+  <p><strong>Crash diagnostics remain enabled.</strong> Apple’s sharing controls are separate. Unity Diagnostics has no in-game opt-out.
+  We may combine summary Apple crash and usage counts with our diagnostics dashboard;
+  we do not import tester names or email addresses into that dashboard. These summary
+  counts are separate from the gameplay reports removed from the app.</p>
 
-  <h2>Privacy requests and retention</h2>
-  <p>Online profile and game records remain until removed through the relevant
-  service or a deletion request. Contact us to request access, correction or deletion,
-  including help with Unity Diagnostics records. We may need information
-  to identify the relevant account or installation and verify your request. Apple
-  manages its own account and Game Center data under
-  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
-  <p>If you email support, we receive your email address and the information you
-  choose to send, and use it to respond to your request. Service providers process
-  data for the functions described above; we do not sell it or share it for advertising.</p>
+  <h2 id="purchases">Purchases</h2>
+  <p>Apple processes purchases and handles billing. We do not receive your payment
+  card or bank account details. The app receives purchase results and checks store
+  receipts to unlock content and restore ownership. Our game code keeps the ownership
+  status on your device rather than uploading purchase records to our game servers.</p>
+  <p>We do not show advertising, track you across apps, buy data about you, sell your
+  personal information, or share it for advertising.</p>
 
-  <h2>Contact</h2>
-  <p>Questions: <a href="mailto:info@watchthismove.com">info@watchthismove.com</a></p>
+  <h2 id="controls">Your data controls</h2>
+  <h3>Delete your online account</h3>
+  <p>Use <strong>Settings → Delete Account</strong> with a working internet connection.
+  The app attempts to remove associated friend-directory, invitation, social, and
+  cloud-backup data before deleting your Unity account. If a required cleanup step
+  fails, deletion remains incomplete and the account is kept so you can retry.
+  Follow the result shown in Settings and contact us if deletion cannot be completed.</p>
+  <p>This control does not delete your Apple account, Game Center records, historical gameplay
+  analytics, or crash reports. It is not a guarantee that every service record,
+  including retained leaderboard records, disappears immediately. Contact us for
+  help with remaining records.</p>
 
-  <p style="margin-top:28px">We'll update this page if data practices ever change;
-  the app will point to the current version.</p>
-</div>
+  <h3>Reset your stats</h3>
+  <p><strong>Settings → Reset Stats</strong> clears the stats stored on your device.
+  If an online profile is connected, the app also attempts to update its lifetime-stat
+  backup. Resetting stats does not delete your online account, published leaderboard
+  scores, historical analytics, or crash reports.</p>
+
+  <h2 id="retention">Retention and service providers</h2>
+  <ul>
+    <li><strong>Online profile and game records:</strong> remain until removed through
+    the relevant service or a deletion request. Different services have separate
+    deletion processes; use the controls above or contact us for help.</li>
+    <li><strong>Historical gameplay analytics:</strong> Unity normally retains raw events
+    for 13 months; combined statistics and analytics profiles may remain longer. The
+    update requests deletion using an existing installation ID, as described above.</li>
+    <li><strong>Unity Diagnostics:</strong> the default retention period is 90 days.</li>
+    <li><strong>Support:</strong> if you email us, we receive your email address and
+    the information you choose to send, and use them to respond. Contact us to request
+    deletion of support correspondence.</li>
+  </ul>
+  <p>Unity Gaming Services processes information for online accounts, cloud saves,
+  social features, leaderboards, and diagnostics. Unity also handles historical analytics
+  and deletion requests. Unity processes data
+  in countries including the United States and countries in the European Union.
+  See <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s
+  Game Player and App User Privacy Policy</a> for its processing practices.</p>
+  <p>Apple handles its accounts, Game Center, payments, and diagnostics under
+  <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>.</p>
+
+  <h2 id="families">Children and families</h2>
+  <p>The game has no advertising, voice chat, or free-form text chat. Online features
+  still involve player names, friend connections, scores, and the information
+  described above. Crash diagnostics remain enabled even though optional gameplay analytics have been removed.</p>
+  <p>Parents and guardians can help children choose a display name that does not
+  reveal personal details and review their Game Center and online-play choices. If you
+  believe a child has provided personal information that should be removed, contact
+  us so we can help identify the relevant records and handle the request.</p>
+
+  <h2 id="requests">Privacy requests and contact</h2>
+  <p>Watch This Move LLC is responsible for how we use your information as described
+  in this policy. Contact <a href="mailto:info@watchthismove.com">info@watchthismove.com</a>
+  to request access, correction, or deletion, including help with Unity Diagnostics
+  records. We may need information to identify the relevant account or installation
+  and verify your request.</p>
+  <p>Depending on where you live and the applicable law, you may also have rights to
+  receive a copy of your data in a portable format, restrict or object to processing,
+  and complain to your local data-protection authority. For data collected by an older version, update and open the app to send the
+  analytics deletion request, or contact us for help.</p>
+  <p>We will update this page when our data practices change and show the revision
+  date above. The app links to the current policy.</p>
+</main>
 </body>
 </html>
