@@ -54,7 +54,7 @@
 <main class="wrap">
   <a class="home brand-link" href="../"><img src="/wordmark.png" alt="The 14th Club home" width="180"></a>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective October 29, 2026 · Last updated November 6, 2026</p>
+  <p class="date">Effective October 29, 2026 · Last updated November 9, 2026</p>
 
   <div class="tldr">
     <strong>The short version</strong>
@@ -106,6 +106,8 @@
   operate their services. This is separate from the iPhone's precise location
   services; the game does not request GPS access. Unity Cloud Save and Leaderboards
   also use your player identifier for service analytics as well as app functionality.
+  Unity Authentication also sends service metrics, such as session-expiry and
+  network-error events, to operate and measure sign-in services.
   These practices continue even though we removed the optional gameplay reports
   described below. They are not advertising or cross-app tracking.</p>
 
@@ -143,8 +145,13 @@
   reports automatically and App Store diagnostics according to your Apple sharing
   settings. Unity Diagnostics is also enabled in the game.</p>
   <p>Unity technical reports include an installation-specific ID and may include
-  device and operating-system details, app version, and details of where an error
-  occurred in the code.</p>
+  device and operating-system details, app version, session activity, runtime
+  performance, and details of where an error occurred in the code. We use these
+  reports to operate the game and investigate faults.</p>
+  <p>We have disabled Unity's Additional Recommended Data collection and optional
+  uses for cross-customer features, modeling contributions, and business
+  recommendations. Essential service diagnostics and access needed for technical
+  support remain enabled. These settings do not erase previously collected data.</p>
   <p><strong>Crash diagnostics remain enabled.</strong> Apple’s sharing controls are separate. Unity Diagnostics has no in-game opt-out.
   We may combine summary Apple crash and usage counts with our diagnostics dashboard;
   we do not import tester names or email addresses into that dashboard. These summary
