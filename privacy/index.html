@@ -108,6 +108,9 @@
   also use your player identifier for service analytics as well as app functionality.
   Unity Authentication also sends service metrics, such as session-expiry and
   network-error events, to operate and measure sign-in services.
+  Unity's purchasing SDK also sends technical service metrics and error diagnostics,
+  such as product-retrieval, purchase, and restore timings and failures. These
+  service requests can occur when the store initializes, even during solo play.
   These practices continue even though we removed the optional gameplay reports
   described below. They are not advertising or cross-app tracking.</p>
 
@@ -125,7 +128,7 @@
   does not offer voice chat or free-form text chat and does not use your microphone.</p>
 
   <h2 id="analytics">Gameplay analytics removed</h2>
-  <p>This version no longer collects optional reports about courses played, scores,
+  <p>This version no longer collects our custom optional gameplay reports about courses played, scores,
   completed holes, game modes, playing time, or gameplay error categories. There is
   no gameplay analytics setting to enable. Scores and other data needed for online
   features and cloud backups are still handled as described above.</p>
