@@ -54,7 +54,7 @@
 <main class="wrap">
   <a class="home brand-link" href="../"><img src="/wordmark.png" alt="The 14th Club home" width="180"></a>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective October 29, 2026 · Last updated November 9, 2026</p>
+  <p class="date">Effective October 29, 2026 · Last updated November 11, 2026</p>
 
   <div class="tldr">
     <strong>The short version</strong>
@@ -146,16 +146,18 @@
   <h2 id="diagnostics">Crash reports and diagnostics</h2>
   <p>We use technical reports to investigate faults. Apple provides TestFlight crash
   reports automatically and App Store diagnostics according to your Apple sharing
-  settings. Unity Diagnostics is also enabled in the game.</p>
+  settings. Legacy Unity Cloud Diagnostics crash reporting remains enabled.
+  The newer Unity engine-diagnostics collection is disabled in this release.</p>
   <p>Unity technical reports include an installation-specific ID and may include
-  device and operating-system details, app version, session activity, runtime
-  performance, and details of where an error occurred in the code. We use these
+  device and operating-system details, app version, and details of where an error
+  occurred in the code. Earlier beta builds with engine diagnostics enabled may
+  also have collected session activity and runtime performance. We use these
   reports to operate the game and investigate faults.</p>
   <p>We have disabled Unity's Additional Recommended Data collection and optional
   uses for cross-customer features, modeling contributions, and business
   recommendations. Essential service diagnostics and access needed for technical
   support remain enabled. These settings do not erase previously collected data.</p>
-  <p><strong>Crash diagnostics remain enabled.</strong> Apple’s sharing controls are separate. Unity Diagnostics has no in-game opt-out.
+  <p><strong>Legacy crash reporting remains enabled.</strong> Apple’s sharing controls are separate. Legacy Unity crash reporting has no in-game opt-out.
   We may combine summary Apple crash and usage counts with our diagnostics dashboard;
   we do not import tester names or email addresses into that dashboard. These summary
   counts are separate from the gameplay reports removed from the app.</p>
@@ -170,7 +172,8 @@
 
   <h2 id="controls">Your data controls</h2>
   <h3>Delete your online account</h3>
-  <p>Use <strong>Settings → Delete Account</strong> with a working internet connection.
+  <p>Use <strong>Settings → Delete Online Profile</strong> with a working internet connection
+  (<strong>Delete Account</strong> in earlier versions).
   The app attempts to remove associated friend-directory, invitation, social, and
   cloud-backup data before deleting your Unity account. If a required cleanup step
   fails, deletion remains incomplete and the account is kept so you can retry.
